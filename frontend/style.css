@@ -1,0 +1,9 @@
+body { font-family: Arial, sans-serif; background: #0f1724; color: #e6eef8; display:flex; align-items:center; justify-content:center; height:100vh; margin:0; }
+.chat-container { width: 420px; background: #0b1220; border-radius:8px; box-shadow: 0 8px 30px rgba(0,0,0,0.6); padding:16px; }
+#chat-window { height: 360px; overflow-y: auto; background: linear-gradient(180deg,#071020,#0b1220); padding:12px; border-radius:6px; border:1px solid rgba(255,255,255,0.03); }
+.user { text-align:right; background:#1f6feb; color:white; margin:8px 0; padding:8px 12px; display:inline-block; border-radius:12px; }
+.ai { text-align:left; background:#16233a; color:#dbe9ff; margin:8px 0; padding:8px 12px; display:inline-block; border-radius:12px; }
+.input-area { display:flex; gap:8px; margin-top:10px; }
+#userInput { flex:1; padding:8px 10px; border-radius:6px; border:1px solid rgba(255,255,255,0.06); background:#081229; color:#e6eef8; }
+#sendBtn { padding:8px 12px; border-radius:6px; background:#2ea3ff; border:none; color:#022; font-weight:600; cursor:pointer; }
+#sendBtn:active { transform:translateY(1px); }
