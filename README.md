@@ -87,3 +87,18 @@ Przykład uruchomienia backendu z poziomu repozytorium:
 pip install -r requirements.txt
 uvicorn backend.main:app --reload
 ```
+
+Deploy frontend to GitHub Pages (free)
+-----------------------------------
+
+You can host the static frontend on GitHub Pages for free. I added a GitHub Actions workflow that copies `frontend/` to the Pages artifact and deploys on every push to `main`.
+
+Steps to enable:
+
+- Push this repository to GitHub (already done).
+- In the repository Settings → Pages, set the source to `GitHub Actions` (the workflow will deploy automatically after first successful run).
+- After a push to `main`, check Actions → "Deploy Frontend to GitHub Pages" for logs. The site URL will appear in Pages settings.
+
+Notes on backend hosting (free options):
+- For a free backend, consider Vercel (serverless Python support) or Railway/Render free tiers. They require separate configuration and tokens.
+- I can help add a simple GitHub Action to call Vercel for automatic backend deploys (requires `VERCEL_TOKEN` secret and a Vercel project).
