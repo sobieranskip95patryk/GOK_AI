@@ -1,0 +1,17 @@
+/* Plik generowany przez GOK_AI - Nie edytuj ręcznie */
+:root {
+    --evolution-level: 1;
+    --brain-glow: #00f2fe;
+}
+
+body {
+    transition: all 2s ease-in-out;
+    background-color: #050505;
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Elementy dodatkowe będą modyfikowane przez VisualEvolver */
+.chat-container {
+    border-radius: 8px;
+}
